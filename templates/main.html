@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Butterfly application</title>
+</head>
+<body>
+<h1>
+    Butterfly application
+</h1>
+
+{{% if result %}}
+<p>
+    Butterfly is {{result}}
+</p>
+{{% endif %}}
+
+<form action=" ">
+    {{% csrf_token %}}
+    Url:
+    <input type="text" name="url" required/>
+    <input type="submit">
+</form>
+
+</body>
+</html>
+
